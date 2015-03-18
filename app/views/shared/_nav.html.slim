@@ -1,0 +1,19 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed data-target="#main-navbar" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#"  Cipher Movies
+    #main-navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        - unless current_user
+          li
+            = link_to 'Sign Up', sign_up_path
+          li
+            = link_to 'Sign In', sign_in_path
+        - else
+          li
+            = link_to 'Sign Out', sign_out_path, method: :delete

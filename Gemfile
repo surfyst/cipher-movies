@@ -7,6 +7,12 @@ gem 'jbuilder', '2.0'
 gem 'pg', '0.18.1'
 gem 'settingslogic', '2.0.9'
 gem 'thin', '1.6.3'
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'slim-rails'
 
 group :doc do
   gem 'sdoc', '0.4.0'

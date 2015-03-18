@@ -1,0 +1,11 @@
+h1 Sign In
+
+= form_for :user, url: sessions_path, method: :post do |f|
+  .form-group
+    = f.label :email
+    = f.email_field :email, class: 'form-control'
+  .form-group
+    = f.label :password
+    = f.password_field :password, class: 'form-control'
+
+  button.btn.btn-default type="submit" Sign In
